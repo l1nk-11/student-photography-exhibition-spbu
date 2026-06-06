@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Заголовки */
+
 h1 {
   font-size: 50px;
   text-align: center;
@@ -28,7 +28,6 @@ h1 {
   }
 }
 
-/* Изображения */
 .images-container {
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +36,7 @@ h1 {
   padding: 20px;
 }
 
-/* Для каждого изображения, делайте его адаптивным */
+
 img {
   max-width: 100%;
   height: auto;
@@ -45,14 +44,14 @@ img {
   margin: 10px auto;
 }
 
-/* Специфические стили для размеров и левых отступов могут быть убраны или переработаны в гибкие параметры */
+
 @media (max-width: 767px) {
-  /* Можно добавить стили для малых экранов */
+
   h1 {
     font-size: 30px;
     margin-top: 20px;
   }
-  /* Настройка для изображений */
+
   img {
     width: 100%;
   }
