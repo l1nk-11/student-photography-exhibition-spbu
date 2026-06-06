@@ -1,71 +1,132 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Выставка студенческой фотографии "Первый и последний кадр?"</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<style>
 
+  body {
+    margin: 0;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    background-color: #fff;
+    color: #000;
+  }
+
+
+  header {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  header h1 {
+    font-size: 3em;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  h2, h3, p {
+    margin: 10px 20px;
+  }
+
+  
+  .info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Футер */
+  footer {
+    background-color: #181818;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 8px 0;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+
+  @media(max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  }
+</style>
+</head>
 <body>
 
-
-<div class="top-half" style="margin-top: 40px;"></div>
-<h1 style="font-family: 'Bahnschrift SemiBold', sans-serif; font-size: 100px;">ПЕРВЫЙ<br>И ПОСЛЕДНИЙ<br>КАДР?</h1>
-</div>
-
-<div class="info">
-<p style="color: rgb(0, 0, 0); text-align: left; font-size: 60px; font-family: 'Bahnschrift SemiBold', sans-serif; margin-top: 90px;">
-20.09<br>
-ПУШКИНСКАЯ, 10
-</p>
-</div>
-</div>
-
-<div class="info">
-<p style="color: rgb(0, 0, 0); text-align: left; font-size: 30px; font-family: 'Bahnschrift SemiBold', sans-serif; font-size: larger;">
-ВЫСТАВКА СТУДЕНЧЕСКОЙ ФОТОГРАФИИ СПбГУ
-</p>
-</div>
-</div>
+<header>
+  <h1>ПЕРВЫЙ И ПОСЛЕДНИЙ КАДР</h1>
+  <div class="info">
+    <h2>Выставка студенческой фотографии</h2>
+    <p>20.09</p>
+    <p>Пушкинская, 10</p>
+  </div>
+</header>
 
 
-<div class="images-container">
-<img src="images/u (3).jpg" width="30%" height=auto; style="display: block; margin-bottom: 60px; margin-top: 200px; margin-left: 300px;">
-<img src="images/i (1).jpg" width="20%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 1050px;">
-<img src="images/a (7).jpg" width="35%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 220px;">
-<img src="images/u (1).jpg" width="20%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 1100px;">
-<img src="images/u (2).jpg" width="20%" height=auto; style="display: block; margin-bottom: 25px; margin-left: 300px;">
-<img src="images/a (10).jpg" width="25%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 700px;">
-<img src="images/i (3).jpg" width="20%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 400px;">
-<img src="images/a (9).jpg" width="15%" height=auto; style="display: block; margin-bottom: 25px; margin-left: 400px;">
-<img src="images/a (6).jpg" width="15%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 400px;">
-<img src="images/a (3).jpg" width="25%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 300px;">
-<img src="images/a (8).jpg" width="15%" height=auto; style="display: block; margin-bottom: 25px; margin-left: 1200px;">
-<img src="images/a (4).jpg" width="15%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 1200px;">
-<img src="images/ash2.jpg" width="35%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 830px;">
-<img src="images/n (1).jpg" width="20%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 300px;">
-<img src="images/i (2).jpg" width="20%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 300px;">
-<img src="images/n (2).jpg" width="20%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 700px;">
-<img src="images/a (2).jpg" width="25%" height=auto; style="display: block; margin-bottom: 60px; margin-left: 1150px;">
-</div>
+<div class="gallery">
+
+  <img src="images/a(1).jpg" alt="Фотография 1">
+  <img src="images/a(2).jpg" alt="Фотография 2">
+  <img src="images/a(3).jpg" alt="Фотография 3">
+  <img src="images/a(4).jpg" alt="Фотография 4">
+  <img src="images/a(5).jpg" alt="Фотография 5">
+  <img src="images/a(6).jpg" alt="Фотография 6">
+  <img src="images/a(7).jpg" alt="Фотография 7">
+  <img src="images/a(8).jpg" alt="Фотография 8">
+  <img src="images/a(9).jpg" alt="Фотография 9">
+  <img src="images/ash2.jpg" alt="Фотография 10">
+  <img src="images/i(1).jpg" alt="Фотография 11">
+  <img src="images/i(2).jpg" alt="Фотография 12">
+  <img src="images/i(3).jpg" alt="Фотография 13">
+  <img src="images/l.png" alt="Фотография 14">
+  <img src="images/n(1).jpg" alt="Фотография 15">
+  <img src="images/n(2).jpg" alt="Фотография 16">
+  <img src="images/z(1).jpg" alt="Фотография 17">
+  <img src="images/z(2).jpg" alt="Фотография 18">
+  <img src="images/z(3).jpg" alt="Фотография 19">
+  <img src="images/p.png" alt="Фотография 20">
   
-<div class="info">
-<p style="color:rgb(0, 0, 0); text-align: left;">
 
-</p>
-</div>
 </div>
 
-<footer style="background-color: #181818; color: #fff; padding: 20px; text-align: center;">
-<div class="footer-content">
-<p>Вероника Азарян <a href="mailto:a-veronica@ya.ru"><br>a-veronica@ya.ru</a></p>
-<p>Лина Виноградова <a href="mailto:viliname@gmail.com"><br>viliname@gmail.com</a></p>
-<p>г. Санкт-Петербург, ул. Пушкинская, 10</p>
 
-<div class="footer-bottom">
-<p>&copy; 2026 </p>
-</div>
+<footer>
+  <p>Вероника Азарян — <a href="mailto:a-veronica@ya.ru">a-veronica@ya.ru</a></p>
+  <p>Лина Виноградова — <a href="mailto:viliname@gmail.com">viliname@gmail.com</a></p>
+  <p>г. Санкт-Петербург, ул. Пушкинская, 10</p>
+  <p>&copy; 2026</p>
 </footer>
 
 </body>
